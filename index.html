@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pannduan untuk Komika Pemula | Standupindo Jogja</title>
+<meta name="description" content="Modul belajar stand-up comedy untuk pemula dari Komunitas Standupindo Jogja.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎤</text></svg>">
+<style>
+:root{--bg:#fff;--fg:#111;--mut:#555;--card:#f2f2f2;--line:#d0d0d0;--inv:#111;--invfg:#fff}
+:root[data-t=dark]{--bg:#0d0d0d;--fg:#f0f0f0;--mut:#a0a0a0;--card:#1a1a1a;--line:#333;--inv:#f0f0f0;--invfg:#0d0d0d}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.15;margin:0 0 .5em}
+h1{font-size:clamp(2.4rem,7vw,4.6rem);letter-spacing:-.02em}h2{font-size:clamp(1.7rem,4vw,2.4rem)}h3{font-size:1.2rem}
+p{margin:.5em 0;max-width:70ch}a{color:inherit}
+:focus-visible{outline:3px solid var(--fg);outline-offset:2px}
+header{position:sticky;top:0;z-index:9;background:var(--bg);border-bottom:1px solid var(--line);display:flex;align-items:center;gap:12px;padding:10px 20px}
+header b{font-family:Georgia,serif;white-space:nowrap}
+nav{display:flex;gap:4px;overflow-x:auto;flex:1;scrollbar-width:none}
+nav a{padding:6px 11px;border-radius:99px;text-decoration:none;font-size:.9rem;white-space:nowrap;color:var(--mut)}
+nav a:hover,nav a.on{background:var(--inv);color:var(--invfg)}
+button{font:inherit;cursor:pointer;border:1.5px solid var(--fg);background:transparent;color:var(--fg);padding:8px 16px;border-radius:8px;transition:background .15s,color .15s}
+button:hover,button.on{background:var(--inv);color:var(--invfg)}
+#th{padding:6px 10px;flex:none}
+main{max-width:920px;margin:0 auto;padding:0 20px}
+section{padding:64px 0 24px;border-top:1px solid var(--line)}
+.hero{border:0;padding:72px 0 40px}
+.sub{color:var(--mut);font-size:1.15rem}
+.stage{background:var(--inv);color:var(--invfg);border-radius:14px;padding:28px;margin-top:28px}
+.stage .steps{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.stage button{border-color:var(--invfg);color:var(--invfg)}
+.stage button:hover,.stage button.on{background:var(--invfg);color:var(--inv)}
+#out{min-height:110px;font-family:Georgia,serif;font-size:1.3rem;line-height:1.4}
+#out small{display:block;font:.85rem system-ui;opacity:.7;margin-bottom:6px}
+.cta{display:inline-block;margin-top:14px;font-size:.95rem;opacity:.75}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;margin-top:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px}
+.card h3{margin-bottom:.25em}.card p{color:var(--mut);margin:.2em 0;font-size:.97rem}
+details{border-bottom:1px solid var(--line);padding:12px 0}
+summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}summary::after{content:"+";font-size:1.4rem;line-height:1}
+details[open] summary::after{content:"\2212"}
+details p,details ul{color:var(--mut)}
+input[type=search]{width:100%;font:inherit;padding:11px 14px;border:1.5px solid var(--fg);border-radius:8px;background:var(--bg);color:var(--fg);margin-top:12px}
+#gl dt{font-weight:700;margin-top:14px}#gl dd{margin:0;color:var(--mut)}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:18px 0 14px}
+.panel{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--fg);border-radius:10px;padding:18px}
+.ex{font-family:Georgia,serif;font-style:italic;border-left:3px solid var(--line);padding-left:14px;margin:12px 0}
+.flow{display:flex;gap:0;flex-wrap:wrap;margin:22px 0}
+.flow div{flex:1 1 200px;padding:18px;background:var(--card);border:1px solid var(--line);position:relative}
+.flow div:nth-child(2){background:var(--line)}.flow div:nth-child(3){background:var(--inv);color:var(--invfg)}
+.flow b{display:block;font-family:Georgia,serif;font-size:1.25rem}.flow span{font-size:.92rem;opacity:.85}
+.chk{display:flex;gap:10px;align-items:flex-start;padding:9px 0;border-bottom:1px solid var(--line);cursor:pointer}
+.chk input{width:20px;height:20px;margin-top:4px;accent-color:var(--fg);flex:none}
+.bar{height:10px;background:var(--card);border:1px solid var(--line);border-radius:9px;overflow:hidden;margin:12px 0}
+.bar i{display:block;height:100%;width:0;background:var(--fg);transition:width .3s}
+.note{background:var(--card);border:1px dashed var(--fg);border-radius:10px;padding:14px;margin:16px 0}
+footer{margin-top:72px;background:var(--inv);color:var(--invfg);padding:36px 20px;text-align:center}
+footer p{margin:.3em auto;max-width:none}
+#top{position:fixed;right:16px;bottom:16px;display:none;background:var(--inv);color:var(--invfg)}
+@media(max-width:560px){body{font-size:16px}header b{display:none}}
+</style>
+</head>
+<body>
+<header>
+<b>🎤 Standupindo Jogja</b>
+<nav id="nav">
+<a href="#istilah">Istilah</a><a href="#tawa">Pemicu tawa</a><a href="#struktur">Struktur</a><a href="#menulis">Menulis</a><a href="#formula">Formula</a><a href="#delivery">Delivery</a><a href="#openmic">Openmic</a><a href="#tips">FAQ &amp; tips</a>
+</nav>
+<button id="th" aria-label="Ganti tema terang atau gelap">◐</button>
+</header>
+
+<main>
+<section class="hero" id="atas">
+<h1>Panduan untuk komika pemula</h1>
+<p class="sub">Dari premis sampai panggung openmic. Panduan belajar stand-up dari Komunitas Standupindo Jogja.</p>
+<p><small></small></p>
+<div class="stage" aria-live="polite">
+<p style="margin:0 0 12px">Klik tiap tahap untuk melihat satu joke tersusun. Contoh materi Sanpras</p>
+<div class="steps">
+<button data-s="0" class="on">Premis</button><button data-s="1">Setup</button><button data-s="2">Punchline</button><button data-s="3">Tag</button>
+</div>
+<div id="out"></div>
+</div>
+<p style="margin-top:20px"><a href="#istilah"><button>Mulai belajar</button></a></p>
+</section>
+
+<section id="istilah">
+<h2>Istilah umum</h2>
+<p>Kosakata dasar dunia stand-up. Ketik untuk mencari.</p>
+<input type="search" id="q" placeholder="Cari istilah, misalnya bit, callback, heckling" aria-label="Cari istilah">
+<dl id="gl"></dl>
+<p id="none" hidden>Istilah tidak ditemukan. Coba kata kunci lain.</p>
+</section>
+
+<section id="tawa">
+<h2>Yang memicu tawa</h2>
+<p>Klik kartu untuk melihat penjelasan dan contoh.</p>
+<div class="grid" id="tg"></div>
+</section>
+
+<section id="struktur">
+<h2>Struktur materi</h2>
+<p>Satu joke sederhana punya tiga bagian.</p>
+<div class="flow">
+<div><b>Premis</b><span>Emosi negatif terhadap suatu objek atau subjek.</span></div>
+<div><b>Setup</b><span>Kalimat berisi asumsi agar penonton membayangkan sesuatu.</span></div>
+<div><b>Punchline</b><span>Twist atau patahan yang membuat penonton tertawa.</span></div>
+</div>
+<div class="panel"><b>Contoh</b>
+<p><b>Premis:</b> Jadi orang Jogja itu nggak enak karena dituntut harus selalu sopan.</p>
+<p><b>Setup:</b> Sopan kan ada batasnya. Jangan mentang-mentang, kalau dipukul harus sopan.</p>
+<p><b>Punchline:</b> Orang Jogja dipukul ya bales, masa bilang, "nggih. Matur suwun."</p></div>
+<p style="margin-top:16px">Urutan besar materi: <b>joke</b> membentuk <b>bit</b>, bit membentuk <b>chunk</b>, chunk membentuk <b>set</b>.</p>
+</section>
+
+<section id="menulis">
+<h2>Menulis materi</h2>
+<div class="tabs" role="tablist" id="wt"></div>
+<div class="panel" id="wp" role="tabpanel" aria-live="polite"></div>
+</section>
+
+<section id="formula">
+<h2>Formula kelucuan</h2>
+<p>Semua contoh memakai satu premis: <i>"Jogja sekarang macet banget ya, heran deh."</i></p>
+<div class="tabs" role="tablist" id="ft"></div>
+<div class="panel" id="fp" role="tabpanel" aria-live="polite"></div>
+</section>
+
+<section id="delivery">
+<h2>Delivery</h2>
+<p>Materi itu penting, tapi delivery yang membuat materi itu hidup.</p>
+<div class="grid" id="dg"></div>
+</section>
+
+<section id="openmic">
+<h2>Sebelum openmic</h2>
+<p>Centang yang sudah kamu siapkan. Progres tersimpan di browsermu.</p>
+<div class="bar"><i id="pb"></i></div><p id="pt" style="color:var(--mut)"></p>
+<div id="cl"></div>
+<button id="rs" style="margin-top:14px">Reset centang</button>
+</section>
+
+<section id="tips">
+<h2>FAQ dan tips</h2>
+<div id="faq"></div>
+<div class="note"><b>Soal AI:</b> boleh dipakai untuk brainstorming angle, daftar punchline, dan cek struktur. Hasil akhir harus tetap dari suaramu. Jangan bawakan hasil AI mentah-mentah, karena tidak otentik dan biasanya tidak lucu.</div>
+</section>
+</main>
+
+<footer>
+<p><b>Courtesy of Standupindo Jogja</b></p>
+<p>Curated and designed by sanpras</p>
+</footer>
+<button id="top" aria-label="Kembali ke atas">↑</button>
+
+<script>
+const $=s=>document.querySelector(s),E=(t,h,c)=>{const e=document.createElement(t);e.innerHTML=h;if(c)e.className=c;return e};
+// theme
+const R=document.documentElement;let th=null;try{th=localStorage.getItem("th")}catch(e){}
+if(!th)th=matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light";
+R.dataset.t=th;
+$("#th").onclick=()=>{th=th=="dark"?"light":"dark";R.dataset.t=th;try{localStorage.setItem("th",th)}catch(e){}};
+
+// hero demo
+const J=[["Premis","Jadi gendut itu nggak enak banget, saya itu gampang capek"],["Setup","Tiap jalan sebentar betis udah ketarik seakan berteriak"],["Punchline","\"Guru hentikan guru, jangan lanjutkan guru\""],["Tag","Ya gimana, betis sekecil ini menopang tol Jogja-solo..."]];
+function show(i){document.querySelectorAll(".stage .steps button").forEach((b,k)=>b.classList.toggle("on",k==i));$("#out").innerHTML="<small>"+J[i][0]+"</small>"+J[i][1]}
+document.querySelectorAll(".stage .steps button").forEach((b,i)=>b.onclick=()=>show(i));show(0);
+
+// glossary
+const G=[["Jokes","Guyonan, terdiri dari premis, setup, punchline."],["Bit","Kumpulan jokes dalam satu topik yang sama."],["Chunk","Kumpulan bit dalam satu tema yang sama."],["Set","Satu penampilan stand-up dengan durasi tertentu."],["Openmic","Tempat latihan stand-up."],["Stand-up show","Tempat penampilan komika matang."],["Ngebom","Tidak lucu."],["Pecah","Lucu."],["LPM","Laugh per minute, satuan tawa untuk mengukur penampilan."],["Try hard","Terlalu memaksa mencari tawa."],["Bridging","Kalimat penghubung antar jokes."],["Act out","Memperagakan punchline supaya makin kena."],["Callback","Memanggil ulang joke yang sudah dibawakan, biasanya di akhir set. Penonton yang ingat tertawa dua kali."],["Tag","Punchline tambahan setelah punchline utama untuk memeras tawa yang tersisa."],["Opener","Penampil pembuka."],["Headliner","Penampil penutup atau bintang utama acara."],["Closer","Joke atau bit paling kuat yang ditaruh di akhir set."],["Host / MC","Pemandu acara yang menghangatkan penonton dan menjahit antar penampil."],["Heckling","Gangguan dari penonton ke penampil."],["Crowd work","Ngobrol dan melucu langsung dengan penonton, bukan dari materi tertulis."],["Riffing","Mencari kelucuan dari hal-hal di sekitar panggung."],["Persona","Karakter panggung (sombong, polos, pasrah, galak). Persona konsisten membuat materimu mudah dikenali."],["One-liner","Joke satu kalimat dengan punchline langsung."],["Observational","Gaya melucu dari pengamatan hal sehari-hari."],["Absurd","Gaya melucu dari logika aneh yang dibangun konsisten."],["Dark jokes","Guyonan bertopik gelap seperti kematian atau penyakit. Risikonya besar, jadi kenali penonton dan batasannya."]];
+function rg(f=""){const l=G.filter(x=>(x[0]+x[1]).toLowerCase().includes(f.toLowerCase()));$("#gl").innerHTML=l.map(x=>`<dt>${x[0]}</dt><dd>${x[1]}</dd>`).join("");$("#none").hidden=l.length>0}
+$("#q").oninput=e=>rg(e.target.value);rg();
+
+// triggers
+const T=[["Kejutan","Penonton menebak kalimat A, tapi kita mengucapkan kalimat B."],["Memalukan","Makin memalukan, makin besar tawanya, karena penonton tidak perlu merasakannya sendiri."],["Superior","Penonton merasa lebih tinggi dari subjek, atau komika menempatkan diri sebagai superior (persona sombong) atau merendahkan diri sendiri."],["Ketidaksesuaian","Keanehan membuat tertawa, tapi keanehan itu harus punya logika."],["Recognition","Momen penonton tertawa sambil berpikir, \"oh iya ya\". Contoh Jogja: bilang \"bentar lagi sampai\" padahal masih di Wates."],["Relatable era digital","Notifikasi grup WhatsApp keluarga, paylater, ojol yang muter-muter, reels motivasi jam 5 pagi."]];
+T.forEach(t=>{const d=E("details",`<summary>${t[0]}</summary><p>${t[1]}</p>`,"card");$("#tg").append(d)});
+
+// tabs util
+function tabs(id,pid,data,fn){const w=$(id);data.forEach((d,i)=>{const b=E("button",d[0]);b.setAttribute("role","tab");b.onclick=()=>{w.querySelectorAll("button").forEach(x=>x.classList.remove("on"));b.classList.add("on");$(pid).innerHTML=fn(d)};w.append(b)});w.firstChild.click()}
+
+const W=[["Gaya tradisional",`<h3>Tiga langkah</h3>
+<p><b>1. Cari premis.</b> Daftar hal yang memunculkan kesal, takut, atau "goblok" di kepalamu. Contoh: macet Jogja saat libur panjang, parkir tanpa standar, takut ketahuan bos scroll TikTok.</p>
+<p><b>2. Cari setup.</b> Lanjutan premis yang memperkuatnya dan berisi asumsi yang akan dipatahkan. Pastikan asumsinya tidak bercabang. Setup lebih dari 3 kalimat? Pangkas.</p>
+<p><b>3. Olah punchline.</b> Tulis minimal 5 alternatif, jangan pakai yang pertama terlintas, lalu pilih yang paling tak terduga tapi masuk akal. Cari tag untuk memeras tawa.</p>
+<div class="note"><b>Tes warung:</b> ceritakan premismu ke teman. Kalau dia langsung nyambung, premismu jalan. Keresahan harus nyata, bukan dibuat-buat.</div>`],
+["Storytelling",`<h3>Lima langkah</h3>
+<p><b>1.</b> Gali cerita lucu dari pengalaman pribadi.</p>
+<p><b>2.</b> Tulis plot runtut dengan tiga unsur: karakter, tujuan, halangan.</p>
+<p><b>3.</b> Selipkan half punch agar penonton tidak bosan di tengah cerita.</p>
+<p><b>4.</b> Siapkan gong akhir berupa punchline besar. Jangan bocorkan twist di awal.</p>
+<p><b>5.</b> Pangkas. Cerita 10 menit di kepala biasanya cukup 3 menit di panggung.</p>
+<div class="note">Pemula: mulai dari cerita pendek 1 sampai 2 menit, jangan langsung 5 menit.</div>`]];
+tabs("#wt","#wp",W,d=>d[1]);
+
+// formulas
+const F=[["Rule of Three","Tiga hal berurutan: dua pertama membangun pola, ketiga mematahkannya.","Waktu libur panjang, macetnya beda. Dari Tugu macet, dari Prambanan macet, dari rumah ke kamar mandi aja macet."],["Hiperbola","Melebih-lebihkan situasi sampai lebay tapi lucu.","Saking macetnya, saya berangkat dari Sleman ke Bantul. Sampai tujuan, anak saya udah lulus SD."],["What-if","Berandai-andai. Tandanya: \"coba kalau\", \"bayangin deh\".","Coba kalau macet gini terus, nanti ada ojek khusus macet. Drivernya bawa kursi lipat sama termos."],["Personifikasi","Benda mati dibuat seolah hidup dan punya perasaan.","Kasihan lampu merah di Tugu, kerja 24 jam tapi nggak ada yang nurut. Mungkin dia mau ganti jadi ungu biar kalian kaget."],["Komparasi","Membandingkan beda waktu, tempat, atau kondisi.","Dulu naik sepeda ke sekolah 10 menit. Sekarang naik motor butuh 40 menit. Kemajuan teknologi bikin saya mundur 30 menit."],["Analogi","Paling sulit: mencari kesamaan dua hal berbeda konsep. Tandanya: \"itu kayak\".","Macet Jogja itu kayak mantan: nongol pas saya buru-buru, dan saya cuma bisa pura-pura nggak lihat."],["Misdirection","Penonton diarahkan ke satu makna, lalu dipatahkan dengan makna lain.","Orang Jogja ramah. Saya klakson orang yang jalannya pelan, dia nengok dan senyum. Ramah... cuma nggak jalan."],["Self-deprecation","Menjadikan dirimu bahan tertawaan. Aman dan akrab dengan penonton.","Saya orang Jogja asli, tapi tetep nyasar. Beda sama Google Maps, dia nyasar bareng saya."],["Callback","Memanggil ulang joke awal set di bagian akhir.","Awal set: nama tetangga \"Mbak Tuti\". Akhir: \"Akhirnya sampai Indomaret. Saya kirim kabar ke Mbak Tuti, Mbak, saya selamat.\""]];
+tabs("#ft","#fp",F,d=>`<h3>${d[0]}</h3><p>${d[1]}</p><p class="ex">${d[2]}</p>`);
+
+// delivery
+[["Mic-ing","Pegang mic searah mulut. Jangan terlalu dekat atau jauh, jangan ditutup tangan."],["Power","Suara harus terdengar. Pastikan kamu mendengar suaramu sendiri lewat speaker."],["Artikulasi","A, I, U, E, O harus jelas. Kalau tidak jelas, penonton tidak mengerti, apalagi tertawa."],["Intonasi","Atur tinggi rendah suara agar tidak flat."],["Timing","Banyak punchline gagal karena terlalu cepat. Jeda sebelum punchline membuat patahannya makin kena."],["Pandangan mata","Tatap penonton. Kalau takut, lihat jidatnya saja."],["Bahasa tubuh","Jangan kaku, jangan juga bergerak tanpa arah. Gerak untuk menekankan, bukan gugup."],["Reaksi ke tawa","Tunggu tawa mereda sebelum lanjut, supaya joke berikutnya tidak hilang."],["Atur napas","Kalau panik, tarik napas dalam sebelum mulai. Jangan lari."]].forEach(d=>$("#dg").append(E("div",`<h3>${d[0]}</h3><p>${d[1]}</p>`,"card")));
+
+// checklist
+const C=["Cek durasi maksimal di acara (biasanya 5 menit)","Pakai sepatu, bukan sandal jepit","Siapkan rekaman audio atau video untuk evaluasi","Bawa catatan kalau takut lupa (boleh)","Cek venue: mic, posisi panggung, lampu, speaker","Datang lebih awal","Matikan notifikasi HP","Tahu jenis acara: openmic umum, internal, atau show berbayar","Kenali penonton: kampus, kafe, atau komunitas"];
+let st=[];try{st=JSON.parse(localStorage.getItem("cl")||"[]")}catch(e){}
+function upd(){const n=document.querySelectorAll("#cl input:checked").length;$("#pb").style.width=n/C.length*100+"%";$("#pt").textContent=n+" dari "+C.length+" siap"+(n==C.length?". Siap naik panggung!":"");try{localStorage.setItem("cl",JSON.stringify([...document.querySelectorAll("#cl input")].map(i=>i.checked)))}catch(e){}}
+C.forEach((c,i)=>{const l=E("label",`<input type="checkbox"><span>${c}</span>`,"chk");l.firstChild.checked=!!st[i];l.firstChild.onchange=upd;$("#cl").append(l)});
+$("#rs").onclick=()=>{document.querySelectorAll("#cl input").forEach(i=>i.checked=false);upd()};upd();
+
+// faq
+[["Belum pede openmic?","Yang penting naik dulu. Rasakan atmosfer panggung dan berani menatap mata penonton untuk pertama kalinya. Itu sudah kemenangan."],["Ngebom di openmic pertama?","Coba terus. Stand-up adalah seni yang bisa dilatih, jadi tidak ada openmic yang percuma."],["Tidak lucu terus?","Tanyakan: kamu gabung untuk apa? Cari uang, belajar public speaking, cari relasi, atau cinta pada keseniannya? Kalau yang kamu cari tidak ada di komunitas ini, mungkin takdirmu bukan di sini. Ya maap~"],["Tips menulis","<ul><li>Jujur pada emosi negatif yang nyata.</li><li>Tulis verbatim, kata per kata.</li><li>Trimming kalimat yang tidak perlu.</li><li>Pisahkan fase menulis dan fase edit.</li><li>Simpan ide di catatan HP.</li><li>Tonton set komika lain untuk belajar struktur, ritme, jeda. Bukan untuk menyalin.</li></ul>"],["Latihan dan evaluasi","<ul><li>Ngebadanin: latih sambil memperagakan, di depan cermin atau di atas motor.</li><li>Coba ke teman tongkrongan tanpa bilang itu materi.</li><li>Rekam, tonton ulang, tandai momen kena, hening, dan tidak nyaman.</li><li>Catat LPM kasar untuk melihat perkembangan, bukan untuk bersaing.</li><li>Cari combud (comedy buddy), tapi tulis materi sampai selesai dulu.</li></ul>"],["Etika","<ul><li>Dilarang memakai materi komika lain atau materi kodian. Semua set bisa direkam dan ketahuan.</li><li>Hati-hati dengan materi yang menyerang kelompok rentan (SARA, difabel, korban kekerasan).</li><li>Menyebut orang atau tempat nyata? Pikirkan dampaknya, dan izin dulu bila orang komunitas.</li><li>Hargai penampil lain: jangan main HP atau ngobrol keras.</li></ul>"],["Media sosial","<ul><li>Potongan 30 sampai 60 detik bisa jadi konten, tapi pilih bit terbaik.</li><li>Tanya panitia dulu apakah boleh dipublikasikan.</li><li>Jangan tergantung algoritma. Latihan di panggung tetap utama.</li></ul>"]].forEach(f=>$("#faq").append(E("details",`<summary>${f[0]}</summary><div style="color:var(--mut)">${f[1].startsWith("<")?f[1]:"<p>"+f[1]+"</p>"}</div>`)));
+
+// nav highlight + back to top
+const secs=[...document.querySelectorAll("section[id]")],links=[...document.querySelectorAll("#nav a")];
+addEventListener("scroll",()=>{let c="";secs.forEach(s=>{if(s.getBoundingClientRect().top<120)c=s.id});links.forEach(a=>a.classList.toggle("on",a.hash=="#"+c));$("#top").style.display=scrollY>600?"block":"none"},{passive:true});
+$("#top").onclick=()=>scrollTo({top:0});
+</script>
+</body>
+</html>
